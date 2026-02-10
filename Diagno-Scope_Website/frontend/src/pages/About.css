@@ -1,0 +1,123 @@
+.about-page {
+    padding-top: 100px;
+    padding-bottom: 60px;
+    min-height: 100vh;
+}
+
+.about-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 60px;
+}
+
+.about-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #fff 0%, #a0a0b0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+body.light-mode .about-title {
+    background: linear-gradient(135deg, #555 0%, #222 100%);
+    /* Darker gradient for Light Mode */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-subtitle {
+    color: var(--text-muted);
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.about-card {
+    padding: 40px 30px;
+    text-align: center;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary);
+}
+
+.icon-box {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.icon-box.blue {
+    color: var(--primary);
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.2);
+}
+
+.icon-box.purple {
+    color: var(--accent);
+    box-shadow: 0 0 20px rgba(112, 0, 255, 0.2);
+}
+
+.icon-box.green {
+    color: var(--success);
+    box-shadow: 0 0 20px rgba(0, 255, 163, 0.2);
+}
+
+.icon-box.orange {
+    color: #ffaa00;
+    box-shadow: 0 0 20px rgba(255, 170, 0, 0.2);
+}
+
+.about-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.about-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.mission-section {
+    text-align: center;
+    padding: 60px;
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.05) 0%, rgba(112, 0, 255, 0.05) 100%);
+    border-radius: 24px;
+    border: 1px solid var(--border-color);
+}
+
+.mission-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.mission-content p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .about-title {
+        font-size: 2.2rem;
+    }
+}

@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+python-multipart
+opencv-python
+numpy
+ultralytics
+pillow
+requests
+pydicom
+grad-cam
+reportlab
+torch
+torchvision
+scikit-image
